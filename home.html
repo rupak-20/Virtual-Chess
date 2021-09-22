@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Virtual Chess</title>
+
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("img/chess board.jpg");
+
+            /* Set a specific height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
+        .content {
+            position: absolute;
+            /* Position the background text */
+            background: rgba(0, 10, 20, 0.65);
+            /* Black background with 0.55 opacity */
+            color: white;
+            /* Grey text */
+            font-family: 'Eagle Lake';
+            font-size: 500%;
+            height: 100%;
+            width: 100%;
+            /* Full width */
+            text-align: center;
+            display: table;
+        }
+
+        span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--banner-->
+    <div class="parallax">
+        <div class="content">
+            <span>Virtual Chess</span>
+            <a href="#sec2"><i class="arrow down"></i></a>
+        </div>
+    </div>
+
+    <!--row-->
+    <div class="row" id="sec2">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                <h2>Single Player</h2>
+            </a>
+            <hr>
+            <p>Challenge yourself by playing against an AI.</p>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                <h2>Multi Player</h2>
+            </a>
+            <hr>
+            <p>Invite your friends and show them who is the boss.</p>
+            <br>
+        </div>
+    </div>
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                <h2>Puzzles</h2>
+            </a>
+            <hr>
+            <p>Solve interesting puzzles and improve your game.</p>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                <h2>Lessons</h2>
+            </a>
+            <hr>
+            <p>Learn new strategies and skill up.</p>
+            <br>
+        </div>
+    </div>
+
+    <!--banner-->
+    <div class="content" style="height: 100%; background: rgba(0, 0, 0, 0.30) ;">
+        <span>Thanks for visiting</span>
+        <a href="#sec2"><i class="arrow up"></i></a>
+    </div>
+
+</body>
+
+</html>

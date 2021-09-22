@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Beginner's Guide to Chess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .parallax {
+
+            /* The image used */
+            background-image: url("chess banner.jpg");
+
+            /* Set a specific height */
+            height: 50%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100% 50%;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
+        .content {
+            position: absolute;
+            /* Position the background text */
+            background: rgba(0, 10, 20, 0.65);
+            /* Black background with 0.55 opacity */
+            color: white;
+            /* Grey text */
+            font-family: 'Eagle Lake';
+            font-size: 400%;
+            height: 50.1%;
+            width: 100%;
+            /* Full width */
+            text-align: center;
+            display: table;
+        }
+
+        span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .seperator {
+            width: 90%;
+            border: transparent;
+            border-top: 3px solid black;
+        }
+
+        hr {
+            border: transparent;
+            border-top: 2px solid darkslategrey;
+            width: 30%;
+            transition: width 0.7s;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 20px;
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-family: 'Eagle Lake';
+        }
+
+        .column:hover hr {
+            width: 45%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        h2 {
+            margin-left: 5%;
+            font-family: 'Eagle Lake';
+        }
+    </style>
+</head>
+
+<body>
+    <!--top topnav-->
+    <div class="topnav">
+        <a href="home.html">Home </a>
+        <a href="single player.html">Single Player</a>
+        <a href="multi player.html">Multi Player</a>
+        <a href="puzzles.html">Puzzles</a>
+        <a href="donate.html">Please Donate </a>
+        <a href="#bottom">About us</a>
+    </div>
+
+    <!--banner-->
+    <div class="parallax" id="top">
+        <div class="content">
+            <span>Lessons</span>
+            <a href="#sec2"><i class="arrow down"></i></a>
+        </div>
+    </div>
+
+    <!--row-->
+    <br id="sec2"><br>
+    <h2>Beginner</h2>
+    <hr class="seperator">
+
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h2>Intermediate</h2>
+    <hr class="seperator">
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <br><br><br>
+    <h2>Advanced</h2>
+    <hr class="seperator">
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <!--row-->
+    <div class="row">
+        <div class="column">
+            <br>
+            <a href="single player.html"><img src="img/king.png">
+                Single Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="multi player.html"><img src="img/queen.png">
+                Multi Player
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="puzzles.html"><img src="img/rook.png">
+                Puzzles
+            </a>
+            <hr>
+            <br>
+        </div>
+        <div class="column">
+            <br>
+            <a href="guide.html"><img src="img/pawn.png">
+                Lessons
+            </a>
+            <hr>
+            <br>
+        </div>
+    </div>
+
+    <div class="content" id="bottom" style="height: 100%; background: rgba(0, 0, 0, 0.30) ;">
+        <span>Thanks for visiting</span>
+        <a href="#top"><i class="arrow up"></i></a>
+    </div>
+
+</body>
+
+</html>
